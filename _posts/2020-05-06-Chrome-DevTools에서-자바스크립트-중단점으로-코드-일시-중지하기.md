@@ -1,7 +1,7 @@
 > 참고
 > [https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints?hl=ko](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints?hl=ko)
 
-일반적으로 코드줄(`line of code`)을 중단점으로 이용하지만 코드줄은 어느 부분이 문제가 되는지 모르거나, 큰 규모의 코드 베이스에서 비효율적입니다.
+일반적으로 코드 줄을 중단점으로 이용하지만 코드 줄은 어느 부분이 문제가 되는지 모르거나, 큰 규모의 코드 베이스에서 비효율적입니다.
 
 ## 중단점 종류
 
@@ -19,7 +19,8 @@
 
 <img src="/assets/images/chrome-devtools-js-pause-breakpoints/loc-breakpoint.png" alt="코드 줄 중단점 예시" style="max-width:800px;">
 
-조사해야 하는 정확한 코드 영역을 알고 있을 때 코드 줄 중단점을 사용합니다. DevTools은 항상 이 코드 줄이 실행되기 전에 일시 중지합니다.
+조사해야 하는 정확한 코드 영역을 알고 있을 때 코드 줄 중단점을 사용합니다.<br />
+DevTools은 항상 이 코드 줄이 실행되기 전에 일시 중지합니다.
 
 설정방법
 
@@ -86,16 +87,18 @@ DOM 노드 또는 그 하위 요소를 변경하는 코드에서 일시 중지�
 ### DOM 변경 중단점의 유형
 
 - `Subtree modifications.`
-  - 현재 선택한 노드의 하위 요소가 삭제 또는 추가되거나 하위 요소의 콘텐츠가 변경될 때 트리거됩니다. 하위 요소 노드의 속성이 변경되거나 현재 선택한 노드가 변경될 때는 트리거되지 않습니다.
+  - 현재 선택한 노드의 하위 요소가 삭제 또는 추가되거나 하위 요소의 콘텐츠가 변경될 때 트리거 됩니다.
+  - 하위 요소 노드의 속성이 변경되거나 현재 선택한 노드가 변경될 때는 트리거 되지 않습니다.
 - `Attributes modifications`
-  - 현재 선택한 노드에 속성을 추가 또는 삭제하거나 속성 값이 변경될 때 트리거됩니다.
+  - 현재 선택한 노드에 속성을 추가 또는 삭제하거나 속성 값이 변경될 때 트리거 됩니다.
 - `Node Removal`
-  - 현재 선택된 노드가 삭제될 때 트리거됩니다
+  - 현재 선택된 노드가 삭제될 때 트리거 됩니다
 
 ## XHR/Fetchbreakpoints
 
-<img src="/assets/images/chrome-devtools-js-pause-breakpoints/xhr-breakpoint.png" alt="XHR/Fetchbreakpoints 예시" style="max-width:800px;" /><br />
-(위 예제는 org문자열을 포함하는 URL에 대한 XHR 중단점을 생성합니다.)
+<img src="/assets/images/chrome-devtools-js-pause-breakpoints/xhr-breakpoint.png" alt="XHR/Fetchbreakpoints 예시" style="max-width:800px;" />
+
+(위 예제는 `org`문자열을 포함하는 URL에 대한 XHR 중단점을 생성합니다.)
 
 XHR의 요청 URL에 특정 문자열이 포함된 경우 중단점을 적용하고 싶을때 사용합니다.<br />
 DevTools은 XHR이 send()를 호출하는 코드 줄에서 일시 중지합니다.
