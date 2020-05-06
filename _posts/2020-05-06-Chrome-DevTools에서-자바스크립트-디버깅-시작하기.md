@@ -15,7 +15,7 @@ Source 패널은 자바스크립트를 디버그하는 곳입니다.
 1. `Command+Option+I(Mac)` 또는 `Control+Shift+I(Windows, Linux)`를 눌러서 DevTools를 엽니다. 이 단축키는 Console 패널을 엽니다.
 1. `Sources` 탭을 클릭합니다.
    - Sources 패널 UI는 3개 부분으로 나뉩니다.<br />
-     <img src="https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/sources-annotated.png?hl=ko" style="max-width: 500px">
+     <img src="/assets/images/chrome-devtools-js-get-started/sources-annotated.png?hl=ko" style="max-width: 500px">
    - `File Navigator`
      - 해당 페이지가 요청하는 모든 파일이 여기에 나열됩니다.
    - `Code Editor`
@@ -37,12 +37,12 @@ console.log보다 나은 점
 
 [예제](https://googlechrome.github.io/devtools-samples/debug-js/get-started)의 `click` 리스너가 실행되는 시점에 코드를 일시 중지하고 싶을 경우 아래의 순서로 `Event Listener Breakpoints`를 이용할 수 있습니다.
 
-<img src="/assets/images/get-started-click-breakpoint.png?hl=ko" style="max-width:800px;" />
+<img src="/assets/images/chrome-devtools-js-get-started/get-started-click-breakpoint.png?hl=ko" style="max-width:800px;" />
 
 1. JavaScript Debugging 창에서 Event Listener Breakpoints를 클릭하여 섹션을 펼칩니다.
 1. Mouse 이벤트 카테고리를 펼쳐서 click항목을 체크합니다.
    - Mouse click항목이 체크 되었으므로 모든 click이벤트가 실행될때 자동 중단점이 잡힙니다.
-1. 다른 코드 줄에서 일시 중지된다면 원하는 줄에서 중단될때까지 `Resume Script Execution` <img src="https://developers.google.com/web/tools/chrome-devtools/images/resume-script-execution.png?hl=ko" width="26" height="20" /> 누릅니다.
+1. 다른 코드 줄에서 일시 중지된다면 원하는 줄에서 중단될때까지 `Resume Script Execution`을 누릅니다.
 
 ## 4단계 : 단계별 코드 실행
 
@@ -70,7 +70,7 @@ console.log보다 나은 점
 
 ## 5단계 : 코드 줄 중단점 설정
 
-<img src="https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/line-of-code-breakpoint.png?hl=ko" style="max-width: 800px;">
+<img src="/assets/images/chrome-devtools-js-get-started/line-of-code-breakpoint.png?hl=ko" style="max-width: 800px;">
 
 코드 줄 중단점(Line-of-code breakpoints)은 가장 일반적인 유형의 중단점입니다.<br />
 일시 중지하고 싶은 코드 줄이 있다면 코드 줄 중단점을 사용하세요.
