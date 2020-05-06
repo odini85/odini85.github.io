@@ -72,7 +72,7 @@ console.log("c");
 
 ## DOM 변경 중단점
 
-<img src="/assets/images/dom-change-breakpoint.png" alt="DOM 변경 중단점 예시" style="max-width:800px;" />
+<img src="/assets/images/chrome-devtools-js-pause-breakpoints/dom-change-breakpoint.png" alt="DOM 변경 중단점 예시" style="max-width:800px;" />
 
 DOM 노드 또는 그 하위 요소를 변경하는 코드에서 일시 중지하고 싶을 때 DOM 변경 중단점을 사용합니다.
 
@@ -94,7 +94,7 @@ DOM 노드 또는 그 하위 요소를 변경하는 코드에서 일시 중지�
 
 ## XHR/Fetchbreakpoints
 
-<img src="/assets/images/xhr-breakpoint.png" alt="XHR/Fetchbreakpoints 예시" style="max-width:800px;" /><br />
+<img src="/assets/images/chrome-devtools-js-pause-breakpoints/xhr-breakpoint.png" alt="XHR/Fetchbreakpoints 예시" style="max-width:800px;" /><br />
 (위 예제는 org문자열을 포함하는 URL에 대한 XHR 중단점을 생성합니다.)
 
 XHR의 요청 URL에 특정 문자열이 포함된 경우 중단점을 적용하고 싶을때 사용합니다.<br />
@@ -114,7 +114,7 @@ DevTools은 XHR이 send()를 호출하는 코드 줄에서 일시 중지합니�
 
 ## 이벤트 리스너 중단점
 
-<img src="/assets/images/event-listener-breakpoint.png" alt="이벤트 리스너 중단점 예시" style="max-width:800px;" /><br />
+<img src="/assets/images/chrome-devtools-js-pause-breakpoints/event-listener-breakpoint.png" alt="이벤트 리스너 중단점 예시" style="max-width:800px;" /><br />
 
 이벤트가 발생했을때 실행되는 리스너 코드에 중단점을 추가하고 싶을때 사용합니다.<br />
 click과 같은 특정 이벤트 또는, 모든 마우스 이벤트(포괄적인 범주의 이벤트)를 선택할 수 있습니다.
@@ -127,7 +127,7 @@ click과 같은 특정 이벤트 또는, 모든 마우스 이벤트(포괄적인
 
 ## 예외 중단점
 
-<img src="/assets/images/uncaught-exception.png" alt="예외 중단점 예시" style="max-width:800px;" /><br />
+<img src="/assets/images/chrome-devtools-js-pause-breakpoints/uncaught-exception.png" alt="예외 중단점 예시" style="max-width:800px;" /><br />
 
 예외 발생시 중단점을 적용하기위해 사용합니다.
 
