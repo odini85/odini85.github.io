@@ -7,21 +7,24 @@
 
 버그를 생성하는 부분을 찾는것은 디버깅의 첫단계입니다.
 
-## 2단계 : 소스 패널 UI 익히기
+## 2단계 : Source 패널 UI 익히기
 
-DevTools은 CSS 변경, 페이지 로드 성능 프로파일링, 네트워크 요청 모니터링과 같은 다양한 작업을 위한 다양한 도구를 제공합니다.<br />
+DevTools은 CSS 변경, 페이지 로드 성능 프로파일링, 네트워크 요청 모니터링과 같은 다양한 작업을 위한 다양한 도구를 제공합니다.<
+
 Source 패널은 자바스크립트를 디버그하는 곳입니다.
 
-1. `Command+Option+I(Mac)` 또는 `Control+Shift+I(Windows, Linux)`를 눌러서 DevTools를 엽니다. 이 단축키는 Console 패널을 엽니다.
-1. `Sources` 탭을 클릭합니다.
-   - Sources 패널 UI는 3개 부분으로 나뉩니다.<br />
-     <img src="/assets/images/chrome-devtools-js-get-started/sources-annotated.png?hl=ko" style="max-width: 500px">
-   - `File Navigator`
-     - 해당 페이지가 요청하는 모든 파일이 여기에 나열됩니다.
-   - `Code Editor`
-     - File Navigator 창에서 파일을 선택한 후, 해당 파일의 콘텐츠가 여기에 표시됩니다.
-   - `JavaScript Debugging`
-     - 페이지의 자바스크립트를 검사하는 다양한 도구입니다. DevTools 창이 넓다면 이 창이 Code Editor 창의 오른쪽에 표시됩니다.
+`Command+Option+I(Mac)` 또는 `Control+Shift+I(Windows, Linux)`를 눌러서 DevTools를 열수 있습니다.
+
+Sources 패널 UI는 3개 부분으로 나뉩니다.
+
+<img src="/assets/images/chrome-devtools-js-get-started/sources-annotated.png?hl=ko" style="max-width: 500px">
+
+- `File Navigator`
+  - 해당 페이지가 요청하는 모든 파일이 여기에 나열됩니다.
+- `Code Editor`
+  - File Navigator 창에서 파일을 선택하면 해당 파일의 콘텐츠가 여기에 표시됩니다.
+- `JavaScript Debugging`
+  - 페이지의 자바스크립트를 검사하는 다양한 도구입니다.
 
 ## 3단계 : 중단점(break point)으로 코드 일시 중지
 
@@ -72,7 +75,7 @@ console.log보다 나은 점
 
 <img src="/assets/images/chrome-devtools-js-get-started/line-of-code-breakpoint.png?hl=ko" style="max-width: 800px;">
 
-코드 줄 중단점(Line-of-code breakpoints)은 가장 일반적인 유형의 중단점입니다.<br />
+코드 줄 중단점은 가장 일반적인 유형의 중단점입니다.<br />
 일시 중지하고 싶은 코드 줄이 있다면 코드 줄 중단점을 사용하세요.
 
 ## 6단계 : 변수 값 확인
@@ -89,7 +92,7 @@ console.log보다 나은 점
 ### 방법 3: Console
 
 console.log()를 이용해 원하는 구문을 평가할 수 있습니다.<br />
-Console 창이 안보인다면, `Esc`를 눌러 열 수 있습니다.<br />
+Console 창이 안보인다면, `Esc`를 눌러 열 수 있습니다.
 
 중단점에서 접근이 가능한 변수라면 console.log()를 이용하여 확인가능합니다.
 
