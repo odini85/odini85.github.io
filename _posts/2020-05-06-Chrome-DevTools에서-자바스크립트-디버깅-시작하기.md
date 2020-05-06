@@ -1,15 +1,13 @@
-# Chrome DevTools에서 자바스크립트 디버깅 시작하기
+> 참고
+>
+> - [https://developers.google.com/web/tools/chrome-devtools/javascript?hl=ko](https://developers.google.com/web/tools/chrome-devtools/javascript?hl=ko)
+> - [https://ko.javascript.info/debugging-chrome](https://ko.javascript.info/debugging-chrome)
 
-## 참고
-
-- [https://developers.google.com/web/tools/chrome-devtools/javascript?hl=ko](https://developers.google.com/web/tools/chrome-devtools/javascript?hl=ko)
-- [https://ko.javascript.info/debugging-chrome](https://ko.javascript.info/debugging-chrome)
-
-### 1단계 : 버그 재현
+## 1단계 : 버그 재현
 
 버그를 생성하는 부분을 찾는것은 디버깅의 첫단계입니다.
 
-### 2단계 : 소스 패널 UI 익히기
+## 2단계 : 소스 패널 UI 익히기
 
 DevTools은 CSS 변경, 페이지 로드 성능 프로파일링, 네트워크 요청 모니터링과 같은 다양한 작업을 위한 다양한 도구를 제공합니다.<br />
 Source 패널은 자바스크립트를 디버그하는 곳입니다.
@@ -25,7 +23,7 @@ Source 패널은 자바스크립트를 디버그하는 곳입니다.
    - `JavaScript Debugging`
      - 페이지의 자바스크립트를 검사하는 다양한 도구입니다. DevTools 창이 넓다면 이 창이 Code Editor 창의 오른쪽에 표시됩니다.
 
-### 3단계 : 중단점(break point)으로 코드 일시 중지
+## 3단계 : 중단점(break point)으로 코드 일시 중지
 
 console.log() 메서드로도 작업을 완료할 수는 있지만,<br />
 중단점을 이용하면 실행 도중에 코드를 일시 중지하고 해당 시점의 모든 변수 값을 검사할 수 있습니다.
@@ -46,7 +44,7 @@ console.log보다 나은 점
    - Mouse click항목이 체크 되었으므로 모든 click이벤트가 실행될때 자동 중단점이 잡힙니다.
 1. 다른 코드 줄에서 일시 중지된다면 원하는 줄에서 중단될때까지 `Resume Script Execution` <img src="https://developers.google.com/web/tools/chrome-devtools/images/resume-script-execution.png?hl=ko" width="26" height="20" /> 누릅니다.
 
-### 4단계 : 단계별 코드 실행
+## 4단계 : 단계별 코드 실행
 
 일반적으로 버그는 스크립트를 잘못된 순서로 실행했을 때 발생합니다.<br />
 코드를 단계별로 실행하면 코드 실행을 한 번에 한 줄씩 따라가면서 기대한 것과 다른 순서로 실행되는 곳이 어디인지 알아낼 수 있습니다.
@@ -70,16 +68,16 @@ console.log보다 나은 점
   - 활성화되어 있고, 개발자 도구가 열려있는 상태에서 스크립트 실행 중에 에러가 발생하면 실행이 자동으로 멈춥니다.
   - 개발하다가 에러와 함께 스크립트가 죽었다면 디버거를 열고 이 옵션을 활성화한 후, 페이지를 새로 고침하면 에러가 발생한 곳과 에러 발생 시점의 컨텍스트를 확인할 수 있습니다.
 
-### 5단계 : 코드 줄 중단점 설정
+## 5단계 : 코드 줄 중단점 설정
 
 <img src="https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/line-of-code-breakpoint.png?hl=ko" style="max-width: 800px;">
 
 코드 줄 중단점(Line-of-code breakpoints)은 가장 일반적인 유형의 중단점입니다.<br />
 일시 중지하고 싶은 코드 줄이 있다면 코드 줄 중단점을 사용하세요.
 
-### 6단계 : 변수 값 확인
+## 6단계 : 변수 값 확인
 
-#### 방법 1. Scope 창
+### 방법 1. Scope 창
 
 코드 줄에서 일시 중지하면 `Scope` 창에 현재 정의된 로컬 및 전역 변수가 무엇인지 각 변수의 값과 함께 표시합니다.<br />
 가까운 변수가 있는 경우에는 이것도 표시합니다. 변수 값을 편집하려면 더블클릭합니다
@@ -95,6 +93,6 @@ Console 창이 안보인다면, `Esc`를 눌러 열 수 있습니다.<br />
 
 중단점에서 접근이 가능한 변수라면 console.log()를 이용하여 확인가능합니다.
 
-### 7단계 : 수정 내용 적용
+## 7단계 : 수정 내용 적용
 
 수정내용 반영!
