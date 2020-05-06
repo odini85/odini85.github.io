@@ -12,6 +12,13 @@
     }
   }
 
+  table {
+    border: 1px solid #000;
+  }
+  td {
+    padding: 0.5em;
+  }
+
   &-title {
     color: $default-shade;
     font-family: $sans-serif;
