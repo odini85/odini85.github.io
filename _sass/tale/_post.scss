@@ -27,6 +27,12 @@
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
     background: #000;
+    &:first-child {
+      border-left: 0;
+    }
+    &:last-child {
+      border-right: 0;
+    }
   }
 
   &-title {
