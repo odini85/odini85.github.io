@@ -150,7 +150,7 @@ DevTools는 현재 작업과 관련없는 리소스를 필터링하기위한 수
 사용방법
 
 1. `Control + Shift + P` 또는 `Command + Shift + P` (Mac)를 눌러 명령 메뉴를 엽니 다.
-1. 블록을 입력하고 요청 차단 표시를 선택한 후 Enter를 누르십시오.
+1. `block`을 입력하고 `Show Request Blocking`를 선택한 후 Enter키를 누릅니다.
 1. `+`버튼을 눌러 패턴을 추가합니다.
 1. `main.css`을 입력하고 `Add`버튼을 눌러 추가하고, 페이지를 새로고침합니다.
 1. `main.css` 리소스가 제외된 것을 확인할 수 있습니다.
