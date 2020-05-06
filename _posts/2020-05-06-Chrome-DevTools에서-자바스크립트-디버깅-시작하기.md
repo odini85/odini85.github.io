@@ -61,7 +61,7 @@ console.log보다 나은 점
 - `Step out of current function`
   - 실행 중인 함수의 실행이 끝날 때 까지 실행을 계속합니다.
   - 실수로 Step 을 눌러 내부 동작을 알고 싶지 않은 중첩 함수로 진입했거나 가능한 한 빨리 함수 실행을 끝내고 싶은 경우 유용합니다.
-- Deactivate breakpoints
+- `Deactivate breakpoints`
   - 모든 중단점을 일시적으로 활성화/비활성화합니다(실행에는 영향이 없습니다).
 - `Pause in exceptions`
   - 예외 발생 시 코드를 자동 중지시켜주는 기능을 활성화/비활성화 합니다.
