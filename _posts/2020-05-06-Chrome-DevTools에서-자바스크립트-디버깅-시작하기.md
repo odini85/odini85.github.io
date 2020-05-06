@@ -37,7 +37,7 @@ console.log보다 나은 점
 
 [예제](https://googlechrome.github.io/devtools-samples/debug-js/get-started)의 `click` 리스너가 실행되는 시점에 코드를 일시 중지하고 싶을 경우 아래의 순서로 `Event Listener Breakpoints`를 이용할 수 있습니다.
 
-<img src="https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/get-started-click-breakpoint.png?hl=ko" style="max-width:800px;" />
+<img src="/assets/images/get-started-click-breakpoint.png?hl=ko" style="max-width:800px;" />
 
 1. JavaScript Debugging 창에서 Event Listener Breakpoints를 클릭하여 섹션을 펼칩니다.
 1. Mouse 이벤트 카테고리를 펼쳐서 click항목을 체크합니다.
