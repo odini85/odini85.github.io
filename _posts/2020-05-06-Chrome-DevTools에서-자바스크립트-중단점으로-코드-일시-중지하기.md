@@ -15,8 +15,6 @@
 | 예외          | 포착 또는 미포착 예외를 생성하는 코드 줄.           |
 | 함수          | 특정 함수가 호출될 때마다.                          |
 
-|
-
 ## 코드 줄 중단점
 
 <img src="/assets/images/chrome-devtools-js-pause-breakpoints/loc-breakpoint.png" alt="코드 줄 중단점 예시" style="max-width:800px;">
@@ -178,5 +176,3 @@ DevTools Console에서 debug()를 사용하고 싶은경우<br />
 1. 함수가 범위인 영역 어딘가에 코드 줄 중단점을 설정합니다.
 1. 중단점을 트리거합니다.
 1. 코드가 코드 줄 중단점에서 아직 일시 중지된 동안 DevTools 콘솔에서 debug()를 호출합니다.
-
-.

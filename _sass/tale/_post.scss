@@ -12,11 +12,15 @@
     }
   }
 
-  table {
-    border: 1px solid #000;
-  }
+  th,
   td {
+    border: 1px solid #000;
     padding: 0.5em;
+  }
+
+  thead th {
+    background: #000;
+    color: #fff;
   }
 
   &-title {
