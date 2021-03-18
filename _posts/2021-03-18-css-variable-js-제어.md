@@ -44,8 +44,10 @@ document.documentElement.style.setProperty("--vh", `${get1vh()}px`);
       }
       .layer2 {
         left: 25vw;
-        // :root에 정의된 변수 --vh를 가져온다.
-        // var(--vh, 1vh)는 fallback기능으로 --vh가 없다면 1vh를 사용 하겠다는 의미
+        /*
+          :root에 정의된 변수 --vh를 가져온다.
+          var(--vh, 1vh)는 fallback기능으로 --vh가 없다면 1vh를 사용 하겠다는 의미
+        */
         height: calc(var(--vh, 1vh) * 100);
         background: orange;
       }
