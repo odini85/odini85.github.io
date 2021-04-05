@@ -79,6 +79,7 @@ var purgeLinkCSS = (function () {
     // url 정보 직렬화 --> 객체
     serializeToObject: function (url) {
       var result = {};
+
       if (!url || typeof url !== "string") {
         return;
       }
@@ -98,31 +99,19 @@ var purgeLinkCSS = (function () {
     },
 
     // url 정보 객체 --> 직렬화
-    objectToSerialize: function (params) {
-      if (!params) {
+    objectToSerialize: function (obj) {
+      var result = "?";
+      if (!obj || Object.prototype.toString.call(obj) !== "[object Object]") {
         return "";
       }
-
-      var result = "";
-      var isFirst = true;
-
-      for (var key in params) {
-        if (isFirst) {
-          result += "?";
-          isFirst = false;
-        } else {
-          result += "&";
+      Object.keys(obj).forEach((key, index) => {
+        if (typeof obj[key] !== "undefined" && typeof obj[key] !== "function") {
+          if (index > 0) {
+            result += "&";
+          }
+          result += key + "=" + encodeURIComponent(obj[key]);
         }
-
-        var v = params[key];
-        if (typeof v.length === "string" && v.length > 0) {
-          continue;
-        }
-        if (typeof v === "object") {
-          v = JSON.stringify(v);
-        }
-        result += key + "=" + v;
-      }
+      });
 
       return result;
     },
