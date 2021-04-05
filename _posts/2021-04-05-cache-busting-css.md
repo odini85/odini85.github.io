@@ -104,7 +104,7 @@ var purgeLinkCSS = (function () {
       if (!obj || Object.prototype.toString.call(obj) !== "[object Object]") {
         return "";
       }
-      Object.keys(obj).forEach((key, index) => {
+      Object.keys(obj).forEach(function (key, index) {
         if (typeof obj[key] !== "undefined" && typeof obj[key] !== "function") {
           if (index > 0) {
             result += "&";
