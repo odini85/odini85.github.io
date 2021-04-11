@@ -20,7 +20,7 @@ c = false; // TypeError: Assignment to constant variable
 
 1. JS 원시타입(`primitive`)에 대한 변수 선언 및 할당
 1. JavaScript의 메모리 모델 : 콜 스택 및 힙
-1. JS 비 원시타입(`non-primitive`) 타입 대한 변수 선언 및 할당
+1. JS 비 원시타입(`non-primitive`)에 대한 변수 선언 및 할당
 1. `let` vs `const`
 
 ## JS 원시값(`primitive`)에 대한 변수 선언 및 할당
@@ -102,7 +102,7 @@ JS 메모리 모델은 콜 스택, 힙이라는 2 가지 영역으로 설명을 
 `힙은 원시타입이 아닌 항목이 저장되는 곳입니다.`<br />
 `주요 차이점은 힙이 동적으로 증가 할 수 있는 정렬되지 않은 데이터를 저장할 수 있다는 것입니다.`<br />`(배열과 개체에 적합합니다.)`
 
-## JS 비 원시타입(`non-primitive`) 타입 대한 변수 선언 및 할당
+## JS 비 원시타입(`non-primitive`)에 대한 변수 선언 및 할당
 
 비 원시타입은 원시타입과 다르게 작동합니다.
 
