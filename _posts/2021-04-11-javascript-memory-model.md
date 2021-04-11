@@ -1,3 +1,5 @@
+> [원문 - JavaScript’s Memory Model](https://medium.com/@ethannam/javascripts-memory-model-7c972cd2c239)
+
 # 자바스크립트 메모리 모델
 
 ```js
@@ -235,7 +237,3 @@ myArray = ["a"];
 const myObj = {};
 myObj["newKey"] = "someValue"; // this will not throw an error
 ```
-
-## 원문
-
-[JavaScript’s Memory Model](https://medium.com/@ethannam/javascripts-memory-model-7c972cd2c239)
